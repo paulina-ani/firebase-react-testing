@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Nav from "./navigation/Navigation.js";
+import Content from "./Content.js";
+import firebase from "firebase";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const config = {
+  apiKey: "AIzaSyBISIYAYUssZJuljLkAH9_LxAs1TQJTmhk",
+  authDomain: "fir-testing-5f3bf.firebaseapp.com",
+  databaseURL: "https://fir-testing-5f3bf.firebaseio.com",
+  projectId: "fir-testing-5f3bf",
+  storageBucket: "fir-testing-5f3bf.appspot.com",
+  messagingSenderId: "176155565856"
+};
+
+firebase.initializeApp(config);
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Nav />
+        <Content />
+      </div>
+    );
+  }
 }
 
 export default App;
