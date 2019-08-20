@@ -3,10 +3,9 @@ import Typography from "@material-ui/core/Typography";
 import PageWrapper from "../components/PageWrapper";
 import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
-import firebase from "fireabse";
-import textField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
+import firebase from "firebase";
 
 const styles = theme => ({
   root: {
