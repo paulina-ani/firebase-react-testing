@@ -42,6 +42,8 @@ class Counter extends Component {
       .then(() => this.getData());
   };
 
+  decrease = () => {};
+
   reset = () => {};
 
   render() {
