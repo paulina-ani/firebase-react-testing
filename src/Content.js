@@ -4,6 +4,7 @@ import Counter from "./counter/Counter";
 import CounterLive from "./counter-live/Counter";
 import Sign from "./auth/Sign";
 import Chat from "./chat/Chat";
+import Profile from "./profile/Profile";
 
 const Content = () => (
   <Switch>
