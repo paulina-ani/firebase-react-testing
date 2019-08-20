@@ -8,7 +8,7 @@ import Chat from "./chat/Chat";
 const Content = () => (
   <Switch>
     <Route exact path="/" />
-    <Route exact path="/chat" component={chat} />
+    <Route exact path="/chat" component={Chat} />
     <Route exact path="/counter" component={Counter} />
     <Route exact path="/counter-live" component={CounterLive} />
     <Route exact path="/profile" component={Profile} />
