@@ -1,9 +1,11 @@
+import React, { Component } from "react";
 import Fab from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import Typography from "@material-ui/core/Typography";
 import PageWrapper from "../components/PageWrapper";
 import firebase from "firebase";
+import { withStyles } from "@material-ui/core";
 
 const styles = theme => ({
   fab: {
@@ -85,3 +87,5 @@ class Counter extends Component {
     );
   }
 }
+
+export default withStyles(styles)(Counter);

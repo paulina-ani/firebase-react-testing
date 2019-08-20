@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Nav from "./navigation/Navigation.js";
-import Content from "./Content.js";
+import Content from "./Content";
 import firebase from "firebase";
 
 const config = {
